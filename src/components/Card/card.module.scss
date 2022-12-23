@@ -1,0 +1,32 @@
+.card {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    overflow: hidden;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 2rem;
+        overflow: hidden;
+    }
+
+    &__row {
+        width: 100%;
+    }
+
+    &__avatar {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 100%;
+    }
+
+    &__text {
+        max-width: calc(100% - 0.1rem);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+}

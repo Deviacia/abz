@@ -1,0 +1,27 @@
+.form {
+    width: 100%;
+    max-width: 38rem;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__positions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+
+        margin-bottom: 4.7rem;
+    }
+
+    &__file {
+        margin-bottom: 5rem;
+    }
+}

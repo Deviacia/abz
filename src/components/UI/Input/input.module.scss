@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+// Input
+.label {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 1.6rem;
+    transform: translateY(-50%);
+    color: #7E7E7E;
+
+    transition:
+        top .195s ease-in-out,
+        font-size .195s ease-in-out,
+        opacity .195s ease-in-out;
+}
+
+.field {
+    outline: none;
+    padding: 1.4rem 1.6rem;
+    border-radius: 4px;
+    border: solid 1px #D0CFCF;
+    background: none;
+    color: #000;
+}
+
+.field:focus+.label,
+.field:not(:placeholder-shown)~.label {
+    z-index: 100;
+    padding: 0 4px;
+    margin: 0 -4px;
+    top: 0;
+    opacity: 1;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    // :C
+    background: #F8F8F8;
+}
+
+.error {
+    display: flex;
+    align-self: flex-start;
+    padding: 4px 1.6rem 0;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #CB3D40;
+}

@@ -1,0 +1,17 @@
+.button {
+    padding: 4px 2.3rem;
+    border-radius: 80rem;
+    border: none;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: var(--primary);
+    transition: background-color .195s ease-in-out;
+
+    &:hover {
+        background-color: #FFE302;
+    }
+
+    &:disabled {
+        background-color: #B4B4B4;
+        color: rgba(255, 255, 255, 0.87);
+    }
+}

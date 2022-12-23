@@ -1,0 +1,47 @@
+:root {
+    --font: 'Nunito', sans-serif;
+    --primary: #F4E041;
+    --secondary: #00BDD3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--font);
+    line-height: 2.6rem;
+    font-family: var(--font);
+    background: #F8F8F8;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+input,
+button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: var(--font);
+    line-height: 2.6rem;
+}
+
+form fieldset {
+    border: none;
+
+    input {
+        width: 100%;
+    }
+}
